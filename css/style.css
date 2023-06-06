@@ -83,6 +83,7 @@ section {
 
 .home-img img {
     width: 35vw;
+    box-shadow: 0 0 1rem var(--main-color);
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 20%;
 }
@@ -286,11 +287,13 @@ span {
 }
 
 .portfolio-layer h4 {
+    color: black;
     font-size: 3rem;
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
+    color: #1f242d;
     margin: .3rem 0 1rem;
 }
 
@@ -493,8 +496,33 @@ span {
         font-size: 50%;
     }
 
+    .social-media a {
+        text-align: center;
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
     .contact form .input-box input {
         width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 
@@ -502,7 +530,7 @@ span {
     .home-img img {
         width: 90vw;
     }
-
+    
     .about-img img {
         width: 90vw;
     }
