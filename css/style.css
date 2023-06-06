@@ -171,6 +171,7 @@ span {
 
 .about-img img {
     width: 35vw;
+    border-radius: 20%;
 }
 
 .heading {
@@ -533,6 +534,7 @@ span {
     
     .about-img img {
         width: 90vw;
+        height: 70vw;
     }
     .footer {
         flex-direction: column-reverse;
