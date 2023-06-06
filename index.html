@@ -66,7 +66,7 @@
 
     <!-- service section design -->
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">Our <span>Services</span></h2>
 
         <div class="services-container">
             <div class="services-box">
@@ -161,16 +161,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="user_name" required placeholder="Full Name">
+                <input type="email" name="user_email" required placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="user_number" required placeholder="Mobile Number">
+                <input type="text" name="user_subject" required placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="user_message" required id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <p id="contact-message"></p>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -190,6 +191,9 @@
     <!-- scroll reveal -->
 
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Email Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>

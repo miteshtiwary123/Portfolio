@@ -35,6 +35,39 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
+    /* ======== Email JS ============ */
+// (function() {
+//     emailjs.init();
+// })();
+
+// window.onload = function() {
+//     document.getElementById('contact-form').addEventListener('submit', function(event) {
+//         event.preventDefault();
+//         // these IDs from the previous steps
+//         emailjs.sendForm('service_24uhndq', 'template_usjzcs9', '#contact-form')
+//             .then(function() {
+//                 document.getElementById('contact-message').textContent = 'Message Sent Successfully'
+//             }, function(error) {
+//                 document.getElementById('contact-message').textContent = 'Message not sent (service error) '
+//             });
+//     });
+// }
+const contactForm = document.getElementById('contact-form')
+const contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+    emailjs.sendForm('service_24uhndq', 'template_usjzcs9', '#contact-form', 'gSJOmsT45Ih_Bre1S')
+        .then(() =>{
+            contactMessage.textContent = 'Message Sent Successfully ✅'
+
+        }, () =>{
+            contactMessage.textContent = 'Message not sent (service error) ❌'
+        })
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
     /* ==========scroll reveal ============== */   
 ScrollReveal({
     reset: true,

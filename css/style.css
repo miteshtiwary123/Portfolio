@@ -324,6 +324,11 @@ span {
     margin-bottom: 3rem;
 }
 
+.contact form p {
+    font-size: 1.6rem;
+    color: rgb(255, 194, 114);
+}
+
 .contact form .input-box {
     display: flex;
     justify-content: space-between;
